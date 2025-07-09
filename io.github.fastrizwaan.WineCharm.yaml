@@ -175,8 +175,8 @@ modules:
       - pip3 install --no-deps --no-build-isolation --ignore-installed --prefix=${FLATPAK_DEST} .
     sources:
       - type: git
-        tag: 0.99.5
-        commit: 6523011381f16c27869ac1e6b5b343398d594c15
+        tag: 0.99.6
+        commit: 8f03989428de153f0576c10683893979de61ebff
         url: https://github.com/fastrizwaan/WineCharm.git
 
 
