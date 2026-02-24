@@ -128,8 +128,8 @@ modules:
       - make install 
     sources:
       - type: archive
-        url: https://sourceforge.net/projects/exiftool/files/Image-ExifTool-13.33.tar.gz
-        sha256: 0cc6ecb10d529969a7e7766f5160ad591efa9bba7513b9185c8a1e6c54421fed
+        url: https://sourceforge.net/projects/exiftool/files/Image-ExifTool-13.51.tar.gz
+        sha256: 73b7f1035b20b00bfb6b15aff32799ec88523e48d5ed46c8952b7c54a3aae70f
         
 
   - name: psutil
@@ -175,19 +175,31 @@ modules:
       - type: archive
         url: https://download.gnome.org/sources/zenity/3.44/zenity-3.44.5.tar.xz
         sha256: 29ac447f4246b1da783a3c28ddc80b0ef7c80eccd5836ad9140abf89841d0eab
-        
+
+  - name: polib
+    buildsystem: simple
+    build-commands:
+      - pip3 install --prefix=/app polib*.whl
+    sources:
+      - type: file
+        url: https://files.pythonhosted.org/packages/6b/99/45bb1f9926efe370c6dbe324741c749658e44cb060124f28dad201202274/polib-1.2.0-py2.py3-none-any.whl
+        sha256: 1c77ee1b81feb31df9bca258cbc58db1bbb32d10214b173882452c73af06d62d
+        x-checker-data:
+          type: pypi
+          name: polib
+          packagetype: bdist_wheel
+
   - name: WineCharm
     buildsystem: simple
     build-commands:
       - pip3 install --no-deps --no-build-isolation --ignore-installed --prefix=${FLATPAK_DEST} .
     sources:
       - type: git
-        tag: 0.99.9
-        commit: 17aec328f7e240b4c289402f16ad367296b419d7
+        tag: 1.0
+        commit: 12c7bda596fe9ae2ecb1a18594daafa4896b5657
         url: https://github.com/fastrizwaan/WineCharm.git
 
 
         
 
       
-
