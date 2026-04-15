@@ -2,8 +2,8 @@ id: io.github.fastrizwaan.WineCharm
 sdk: org.gnome.Sdk
 runtime: org.gnome.Platform
 base: org.winehq.Wine
-base-version: stable-24.08
-runtime-version: &runtime-version '48'
+base-version: stable-25.08
+runtime-version: &runtime-version '50'
 command: winecharm
 
 finish-args:
