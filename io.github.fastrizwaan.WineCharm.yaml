@@ -201,8 +201,8 @@ modules:
       - gtk-update-icon-cache -f  /app/share/icons/hicolor
     sources:
       - type: git
-        tag: 1.1
-        commit: ae355aac2a9f718c7c0049e93bc75ec33671171b
+        tag: 1.2
+        commit: 34326aabae6850961985c4b152fa1fb47597c015
         url: https://github.com/fastrizwaan/WineCharm.git
 
 
